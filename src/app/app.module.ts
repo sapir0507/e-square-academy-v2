@@ -13,7 +13,7 @@ import { PostsComponent } from './posts/posts.component';
 import {HttpClientModule} from "@angular/common/http";
 import { CountriesComponent } from './countries/countries.component';
 import {AgGridModule} from "ag-grid-angular";
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {ReactiveFormsModule} from "@angular/forms";
 import {ItemModule} from "./item/item.module";
 
 @NgModule({
@@ -31,8 +31,7 @@ import {ItemModule} from "./item/item.module";
     HttpClientModule,
     ReactiveFormsModule,
     ItemModule,
-    AgGridModule.withComponents([]),
-    FormsModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]

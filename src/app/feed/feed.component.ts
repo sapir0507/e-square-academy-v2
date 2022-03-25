@@ -6,9 +6,7 @@ import {CartService} from "../cart.service";
 @Component({
   selector: 'my-feed',
   template: `
-    <input [(ngModel)]="permission" />
-
-    <div class="wrapper" *appPermission="permission">
+    <div class="wrapper">
 
     <ng-container *ngFor="let item of items">
       <app-item class=""
@@ -40,7 +38,6 @@ import {CartService} from "../cart.service";
   `]
 })
 export class FeedComponent implements OnInit {
-  permission = '';
 
   public get items(): Item[] {
     return this.state.allItems;
